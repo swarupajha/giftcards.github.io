@@ -41,7 +41,13 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PP9ZSGF');</script>
+	<!-- End Google Tag Manager -->
 	</head>
 	<body>
 		
@@ -64,13 +70,18 @@
 							<div class="row">
 								<div class="col-md-12 desc">
 									<h2>Our webiste is opening soon. <br> Please register to notify you when it's ready!</h2>
-									<form class="form-inline" id="fh5co-header-subscribe">
+									<form class="form-inline gform pure-form pure-form-stacked" id="fh5co-header-subscribe" method="POST" data-email=""
+									action="https://script.google.com/macros/s/AKfycbzoaQp4Mm5aFYJ0_UKoRPcNoROzKNh2iTPuOFi85A/exec">
 										<div class="col-md-12 col-md-offset-0">
 											<div class="form-group">
-												<input type="text" class="form-control" id="email" placeholder="Get notify by email">
-												<button type="submit" class="btn btn-primary">Subscribe</button>
+												<input class="form-control" name="email" type="email" id="email" value="" placeholder="Get notify by email">
+												<button type="submit" class="btn btn-primary button-success pure-button button-xlarge">Subscribe</button>
 											</div>
 										</div>
+										<div class="thankyou_message" style="display:none;">
+											<h2><em>Thanks</em> for contacting us!
+											  We will get back to you soon!</h2>
+										  </div>
 									</form>
 									<ul class="fh5co-social-icons">
 										<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
@@ -106,6 +117,9 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!-- Submit the Form to Google Using "AJAX" -->
+	<script data-cfasync="false" src="js/form-submission-handler.js"></script>
+	<!-- END -->
 
 	<script>
     var d = new Date("2020-07-05");
